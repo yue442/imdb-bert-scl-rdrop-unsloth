@@ -1,6 +1,6 @@
 experiment,submission_file,roc_auc,status,source
-bert,submission_bert.csv,0.97434,Complete,results/kaggle.png
-bert_scl,submission_bert_scl.csv,0.97566,Complete,results/kaggle.png
-bert_rdrop,submission_bert_rdrop.csv,0.97637,Complete,results/kaggle.png
-bert_lora,submission_bert_lora.csv,0.95699,Complete,results/kaggle.png
-bert_unsloth_lora,submission_bert_unsloth_lora.csv,0.95724,Complete,results/kaggle.png
+bert,submission_bert.csv,0.97434,Complete,Kaggle submission screenshot retained locally
+bert_scl,submission_bert_scl.csv,0.97566,Complete,Kaggle submission screenshot retained locally
+bert_rdrop,submission_bert_rdrop.csv,0.97637,Complete,Kaggle submission screenshot retained locally
+bert_lora,submission_bert_lora.csv,0.95699,Complete,Kaggle submission screenshot retained locally
+bert_unsloth_lora,submission_bert_unsloth_lora.csv,0.95724,Complete,Kaggle submission screenshot retained locally

@@ -14,7 +14,7 @@
 | BERT + PEFT LoRA | 88.38% | 0.95376 | 0.95699 | 3 | 591,362 | 1.779 |
 | BERT + Unsloth LoRA | 88.64% | 0.95461 | 0.95724 | 3 | 591,362 | 1.777 |
 
-验证指标取验证 Accuracy 最好的 checkpoint。Kaggle 分数是提交后的 ROC-AUC，不是分类准确率。完整数值在 [comparison.csv](results/comparison.csv)，提交成功的记录在 [kaggle.png](results/kaggle.png)。
+验证指标取验证 Accuracy 最好的 checkpoint。Kaggle 分数是提交后的 ROC-AUC，不是分类准确率。完整数值在 [comparison.csv](results/comparison.csv)，提交成绩在 [kaggle_scores.csv](results/kaggle_scores.csv)。成绩来自提交页面的记录，原始截图保存在本地。
 
 这一次 R-Drop 的验证 Accuracy 比 CE 高 0.74 个百分点，SCL 高 0.20 个百分点。LoRA 的可训练参数和显存明显减少，但当前设置下准确率也下降了。Unsloth 与普通 LoRA 的耗时相近，本次没有观察到明确的加速效果。
 
