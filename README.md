@@ -1,6 +1,6 @@
 # IMDB：BERT、SCL、R-Drop 与 LoRA
 
-之前我做过 IMDB 的传统文本分类和预训练模型微调。这次沿用同一任务，把重点放在老师提出的监督对比学习、R-Drop，以及 Unsloth 包装的 LoRA 上。
+之前我做过 IMDB 的传统文本分类和预训练模型微调。这次沿用同一任务，把重点放在老师提出的SCL、R-Drop，以及 Unsloth 包装的 LoRA 上。
 
 我先用 BERT 建立交叉熵基线，再分别加入 SCL 和 R-Drop，最后比较普通 PEFT LoRA 与 Unsloth LoRA。五组正式实验都使用 `bert-base-uncased`，在同一份训练/验证划分上完成训练，并生成 Kaggle 提交文件。
 
