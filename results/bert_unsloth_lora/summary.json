@@ -1,0 +1,164 @@
+{
+  "status": "completed",
+  "split_sha256": "06f887e371de3f97f73434f068bbd75945790abf75a0d0caacf1f3b1ffe1e2f2",
+  "selected_ids_sha256": "58b978d7b24330ec86c247005f396426808b1dd85cb3d03cb27d6d92fafea825",
+  "train_count": 20000,
+  "val_count": 5000,
+  "precision": "bf16",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "effective_batch_size": 16,
+  "contrast_candidates_per_forward": 16,
+  "python": "3.12.3",
+  "versions": {
+    "torch": "2.12.1",
+    "transformers": "5.5.0",
+    "accelerate": "1.15.0",
+    "peft": "0.21.2",
+    "unsloth": "2026.9.14",
+    "unsloth_zoo": "2026.9.9",
+    "numpy": "2.3.2",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1"
+  },
+  "runtime_flags": {
+    "UNSLOTH_COMPILE_DISABLE": "1",
+    "TORCHDYNAMO_DISABLE": "0",
+    "TORCH_COMPILE_DISABLE": "0"
+  },
+  "total_parameters": 110075140,
+  "trainable_parameters": 591362,
+  "base_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "parameter_dtypes": [
+    "torch.float32"
+  ],
+  "trainable_dtypes": [
+    "torch.float32"
+  ],
+  "model_class": "peft.peft_model.PeftModelForSequenceClassification",
+  "lora_config": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.0,
+    "target_modules": [
+      "query",
+      "value"
+    ],
+    "modules_to_save": [
+      "classifier"
+    ]
+  },
+  "tokenized_inputs_sha256": "d441d3f9eb3e74ea3d24188de378a0f38f37f93eacdc77f7e9da2f9589a8e2f3",
+  "training_seconds_including_eval_save": 246.78450889885426,
+  "peak_allocated_gib": 1.7772722244262695,
+  "peak_reserved_gib": 1.8125,
+  "steady_window_seconds": 5.980109557509422,
+  "steady_window_updates": 100,
+  "completed_steps": 3750,
+  "epoch_metrics": [
+    {
+      "epoch": 1.0,
+      "step": 1250,
+      "ce_loss": 0.47878832053542136,
+      "scl_loss": 0.0,
+      "kl_loss": 0.0,
+      "total_loss": 0.47878832053542136,
+      "eval_loss": 0.3144393265247345,
+      "eval_accuracy": 0.8692,
+      "eval_f1": 0.8743757203227046,
+      "eval_auc": 0.9457420000000001,
+      "eval_runtime": 5.311,
+      "eval_samples_per_second": 941.439,
+      "eval_steps_per_second": 58.934
+    },
+    {
+      "epoch": 2.0,
+      "step": 2500,
+      "ce_loss": 0.300721548217535,
+      "scl_loss": 0.0,
+      "kl_loss": 0.0,
+      "total_loss": 0.300721548217535,
+      "eval_loss": 0.29243677854537964,
+      "eval_accuracy": 0.876,
+      "eval_f1": 0.881407804131599,
+      "eval_auc": 0.95308448,
+      "eval_runtime": 5.3364,
+      "eval_samples_per_second": 936.956,
+      "eval_steps_per_second": 58.653
+    },
+    {
+      "epoch": 3.0,
+      "step": 3750,
+      "ce_loss": 0.28237456422150137,
+      "scl_loss": 0.0,
+      "kl_loss": 0.0,
+      "total_loss": 0.28237456422150137,
+      "eval_loss": 0.2833171486854553,
+      "eval_accuracy": 0.8864,
+      "eval_f1": 0.8883208808493905,
+      "eval_auc": 0.9546052,
+      "eval_runtime": 5.2545,
+      "eval_samples_per_second": 951.565,
+      "eval_steps_per_second": 59.568
+    }
+  ],
+  "best_epoch": 3.0,
+  "final_epoch_metrics": {
+    "epoch": 3.0,
+    "step": 3750,
+    "ce_loss": 0.28237456422150137,
+    "scl_loss": 0.0,
+    "kl_loss": 0.0,
+    "total_loss": 0.28237456422150137,
+    "eval_loss": 0.2833171486854553,
+    "eval_accuracy": 0.8864,
+    "eval_f1": 0.8883208808493905,
+    "eval_auc": 0.9546052,
+    "eval_runtime": 5.2545,
+    "eval_samples_per_second": 951.565,
+    "eval_steps_per_second": 59.568
+  },
+  "best_validation": {
+    "eval_loss": 0.28331711888313293,
+    "eval_accuracy": 0.8864,
+    "eval_f1": 0.8883208808493905,
+    "eval_auc": 0.9546052,
+    "epoch": 3.0
+  },
+  "representations": {
+    "n": 1000,
+    "within_class_cosine": 0.7688078284263611,
+    "between_class_cosine": 0.48270538449287415
+  },
+  "config": {
+    "train_file": "data/labeledTrainData.tsv.zip",
+    "test_file": "data/testData.tsv.zip",
+    "split_file": "configs/split_seed42.json",
+    "output_dir": "runs/bert_unsloth_lora",
+    "model": "bert-base-uncased",
+    "backend": "unsloth",
+    "method": "ce",
+    "lora": true,
+    "alpha": 0.2,
+    "beta": 1.0,
+    "temperature": 0.07,
+    "epochs": 3,
+    "batch_size": 16,
+    "accumulation": 1,
+    "learning_rate": 2e-05,
+    "max_length": 256,
+    "seed": 42,
+    "precision": "auto",
+    "gradient_checkpointing": false,
+    "max_steps": -1,
+    "limit_train": 0,
+    "limit_val": 0,
+    "scope": "formal",
+    "allow_cpu": false,
+    "skip_representations": false,
+    "sample_file": "data/sampleSubmission.csv",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594"
+  },
+  "record_source": "Saved formal run; local filesystem paths normalized for publication.",
+  "kaggle_roc_auc": 0.95724,
+  "best_checkpoint": "best_model (epoch 3)"
+}

@@ -1,0 +1,14 @@
+# Separate environment: torch 2.12.1+cu130, torchvision 0.27.1, Python 3.12.
+# This pins the packages actually used, not the newest available stack.
+unsloth==2026.9.14
+unsloth_zoo==2026.9.9
+transformers==5.5.0
+peft==0.21.2
+accelerate==1.15.0
+torchao==0.18.0
+numpy==2.3.2
+pandas==3.0.6
+scikit-learn==1.9.1
+matplotlib==3.10.5
+safetensors==0.8.0
+tokenizers==0.22.2

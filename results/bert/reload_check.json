@@ -1,0 +1,7 @@
+{
+  "samples": 16,
+  "max_positive_probability_difference": 2.6055908208810763e-08,
+  "tolerance": 0.02,
+  "passed": true,
+  "note": "tolerance allows BF16/backend differences; not bitwise equivalence"
+}

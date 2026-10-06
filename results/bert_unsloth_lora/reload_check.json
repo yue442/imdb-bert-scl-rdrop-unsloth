@@ -1,0 +1,8 @@
+{
+  "samples": 5000,
+  "max_positive_probability_difference": 2.9696655245992076e-08,
+  "tolerance": 0.02,
+  "passed": true,
+  "inference_backend": "unsloth_same_environment",
+  "note": "Full validation audit; .02 is an engineering tolerance, NOT exact equivalence or a statistical test."
+}

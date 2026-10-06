@@ -1,0 +1,37 @@
+[
+  {
+    "file": "submission_bert.csv",
+    "rows": 25000,
+    "official_id_order": true,
+    "probabilities_equal_saved_predictions": true,
+    "sha256": "034e7ec4fd90759bd6b06d1f845cdb8c018710a26c3360cc8be1fc96110346d2"
+  },
+  {
+    "file": "submission_bert_scl.csv",
+    "rows": 25000,
+    "official_id_order": true,
+    "probabilities_equal_saved_predictions": true,
+    "sha256": "f94b181cb060d926d4653baaad430328405c17b6fc0326530c5bad0ed990c2e0"
+  },
+  {
+    "file": "submission_bert_rdrop.csv",
+    "rows": 25000,
+    "official_id_order": true,
+    "probabilities_equal_saved_predictions": true,
+    "sha256": "cd9f83f62adc0725a7fd2d0610861363bcde6b19cbee683d6d072afbbde3a3d1"
+  },
+  {
+    "file": "submission_bert_lora.csv",
+    "rows": 25000,
+    "official_id_order": true,
+    "probabilities_equal_saved_predictions": true,
+    "sha256": "5eeacaac0b8f5d2ad8c22adf32fe3c57eda8216d869c7208c42486fe9cee97f4"
+  },
+  {
+    "file": "submission_bert_unsloth_lora.csv",
+    "rows": 25000,
+    "official_id_order": true,
+    "probabilities_equal_saved_predictions": true,
+    "sha256": "83620e13e9574dbd56497c1aa5ae21e9e44dc804a13d1b3a3d91a065a39460b4"
+  }
+]

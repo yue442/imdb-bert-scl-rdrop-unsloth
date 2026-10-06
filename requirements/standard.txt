@@ -1,0 +1,10 @@
+# AutoDL image: Python 3.12, torch 2.8.0+cu128. Install CUDA torch separately.
+transformers==5.12.1
+accelerate==1.14.0
+peft==0.19.1
+numpy==2.3.2
+pandas==3.0.6
+scikit-learn==1.9.1
+matplotlib==3.10.5
+safetensors==0.8.0
+tokenizers==0.22.2

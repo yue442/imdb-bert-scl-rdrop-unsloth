@@ -1,0 +1,19 @@
+{
+  "checked_on": "2026-10-06",
+  "formal_runs": 5,
+  "submission_files": 5,
+  "submission_rows_each": 25000,
+  "official_id_order_matched": true,
+  "saved_probability_values_unchanged": true,
+  "fixed_split_matches_saved_run_hashes": true,
+  "validation_metrics_recomputed_from_5000_predictions": true,
+  "local_cpu_tests": {
+    "passed": 13,
+    "model": "Random tiny BERT; no downloads or formal retraining",
+    "torch": "2.12.0+cpu",
+    "transformers": "5.12.1",
+    "peft": "0.19.1"
+  },
+  "gpu_training_not_rerun_during_repository_preparation": true,
+  "unsloth_gpu_entrypoints_not_retested_after_organization": true
+}

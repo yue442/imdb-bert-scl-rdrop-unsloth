@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+envs/
+data/
+runs/
+hf-cache/
+*.safetensors
+*.bin
+*.npy
+*.zip
+*.log
+.env
+.env.*
+*token*.txt
